@@ -12,35 +12,38 @@
 
 namespace BenGorUser\CarlosBuenosvinosDddBridge\Domain\Event;
 
-use BenGorUser\User\Domain\Event\UserInvitedMailerSubscriber as BaseUserInvitedMailerSubscriber;
+use BenGorUser\CarlosBuenosvinosDddBridge\Domain\Model\UserEvent;
+use BenGorUser\User\Domain\Event\UserEventSubscriber as BaseUserEventSubscriber;
 use Ddd\Domain\DomainEventSubscriber;
 
 /**
- * User invited mailer subscriber class.
+ * User event subscriber class.
  *
  * @author Beñat Espiña <benatespina@gmail.com>
  */
-class UserInvitedMailerSubscriber implements DomainEventSubscriber
+class UserEventSubscriber implements DomainEventSubscriber
 {
     /**
      * The domain event subscriber.
      *
-     * @var BaseUserInvitedMailerSubscriber
+     * @var BaseUserEventSubscriber
      */
     private $subscriber;
 
     /**
      * Constructor.
      *
-     * @param BaseUserInvitedMailerSubscriber $aSubscriber The domain event subscriber
+     * @param BaseUserEventSubscriber $aSubscriber The domain event subscriber
      */
-    public function __construct(BaseUserInvitedMailerSubscriber $aSubscriber)
+    public function __construct(BaseUserEventSubscriber $aSubscriber)
     {
         $this->subscriber = $aSubscriber;
     }
 
     /**
      * {@inheritdoc}
+     *
+     * @param UserEvent $aDomainEvent The domain event
      */
     public function handle($aDomainEvent)
     {
@@ -49,6 +52,8 @@ class UserInvitedMailerSubscriber implements DomainEventSubscriber
 
     /**
      * {@inheritdoc}
+     *
+     * @param UserEvent $aDomainEvent The domain event
      */
     public function isSubscribedTo($aDomainEvent)
     {
