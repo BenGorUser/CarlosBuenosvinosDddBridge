@@ -12,7 +12,7 @@
 
 namespace BenGorUser\CarlosBuenosvinosDddBridge\Application\Service\LogOut;
 
-use BenGorUser\User\Application\Service\LogOut\LogOutUserHandler;
+use BenGorUser\User\Application\Command\LogOut\LogOutUserHandler;
 use Ddd\Application\Service\ApplicationService;
 
 /**

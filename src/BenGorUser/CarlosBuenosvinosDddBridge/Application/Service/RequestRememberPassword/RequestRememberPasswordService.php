@@ -12,7 +12,7 @@
 
 namespace BenGorUser\CarlosBuenosvinosDddBridge\Application\Service\RequestRememberPassword;
 
-use BenGorUser\User\Application\Service\RequestRememberPassword\RequestRememberPasswordHandler;
+use BenGorUser\User\Application\Command\RequestRememberPassword\RequestRememberPasswordHandler;
 use Ddd\Application\Service\ApplicationService;
 
 /**

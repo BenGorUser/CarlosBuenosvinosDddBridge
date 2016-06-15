@@ -12,7 +12,7 @@
 
 namespace BenGorUser\CarlosBuenosvinosDddBridge\Application\Service\Enable;
 
-use BenGorUser\User\Application\Service\Enable\EnableUserHandler;
+use BenGorUser\User\Application\Command\Enable\EnableUserHandler;
 use Ddd\Application\Service\ApplicationService;
 
 /**

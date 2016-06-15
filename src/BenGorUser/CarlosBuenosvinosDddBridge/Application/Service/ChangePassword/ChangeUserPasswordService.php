@@ -12,7 +12,7 @@
 
 namespace BenGorUser\CarlosBuenosvinosDddBridge\Application\Service\ChangePassword;
 
-use BenGorUser\User\Application\Service\ChangePassword\ChangeUserPasswordHandler;
+use BenGorUser\User\Application\Command\ChangePassword\ChangeUserPasswordHandler;
 use Ddd\Application\Service\ApplicationService;
 
 /**

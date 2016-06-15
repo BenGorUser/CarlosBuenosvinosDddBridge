@@ -12,7 +12,7 @@
 
 namespace BenGorUser\CarlosBuenosvinosDddBridge\Application\Service\Remove;
 
-use BenGorUser\User\Application\Service\Remove\RemoveUserHandler;
+use BenGorUser\User\Application\Command\Remove\RemoveUserHandler;
 use Ddd\Application\Service\ApplicationService;
 
 /**

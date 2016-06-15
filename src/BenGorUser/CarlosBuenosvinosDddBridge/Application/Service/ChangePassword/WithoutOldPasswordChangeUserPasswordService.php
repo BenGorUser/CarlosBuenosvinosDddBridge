@@ -10,31 +10,32 @@
  * file that was distributed with this source code.
  */
 
-namespace BenGorUser\CarlosBuenosvinosDddBridge\Application\Service\GrantRole;
+namespace BenGorUser\CarlosBuenosvinosDddBridge\Application\Service\ChangePassword;
 
-use BenGorUser\User\Application\Command\GrantRole\GrantUserRoleHandler;
+use BenGorUser\User\Application\Command\ChangePassword\WithoutOldPasswordChangeUserPasswordHandler;
 use Ddd\Application\Service\ApplicationService;
 
 /**
- * Grant user role service class.
+ * Without old password change user password service class.
  *
  * @author Beñat Espiña <benatespina@gmail.com>
+ * @author Gorka Laucirica <gorka.lauzirika@gmail.com>
  */
-class GrantUserRoleService implements ApplicationService
+class WithoutOldPasswordChangeUserPasswordService implements ApplicationService
 {
     /**
      * The command handler.
      *
-     * @var GrantUserRoleHandler
+     * @var WithoutOldPasswordChangeUserPasswordHandler
      */
     private $handler;
 
     /**
      * Constructor.
      *
-     * @param GrantUserRoleHandler $aHandler The command handler
+     * @param WithoutOldPasswordChangeUserPasswordHandler $aHandler The command handler
      */
-    public function __construct(GrantUserRoleHandler $aHandler)
+    public function __construct(WithoutOldPasswordChangeUserPasswordHandler $aHandler)
     {
         $this->handler = $aHandler;
     }

@@ -1,5 +1,5 @@
 {
-    "name": "bengoruser/carlosbuenosvinos-ddd-bridge",
+    "name": "bengor-user/carlosbuenosvinos-ddd-bridge",
     "description": "Adapter to make User compatible with 'carlosbuenosvinos/ddd' library",
     "keywords": ["user", "adapter", "ddd"],
     "license": "MIT",
@@ -16,15 +16,9 @@
             "homepage": "http://gorkalaucirica.net"
         }
     ],
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/BenGorUser/User"
-        }
-    ],
     "require": {
         "php": "^5.5 || ^7.0",
-        "bengor/user": "dev-refactor/decouple-from-third-party-libraries",
+        "bengor-user/user": "^0.6",
         "carlosbuenosvinos/ddd": "^1.2"
     },
     "require-dev": {
@@ -46,7 +40,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "1.0.x-dev"
+            "dev-master": "1.1.x-dev"
         }
     }
 }

@@ -12,7 +12,7 @@
 
 namespace BenGorUser\CarlosBuenosvinosDddBridge\Application\Service\RevokeRole;
 
-use BenGorUser\User\Application\Service\RevokeRole\RevokeUserRoleHandler;
+use BenGorUser\User\Application\Command\RevokeRole\RevokeUserRoleHandler;
 use Ddd\Application\Service\ApplicationService;
 
 /**

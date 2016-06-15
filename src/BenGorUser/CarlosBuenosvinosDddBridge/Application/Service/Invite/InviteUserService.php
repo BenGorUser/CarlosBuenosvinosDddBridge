@@ -12,7 +12,7 @@
 
 namespace BenGorUser\CarlosBuenosvinosDddBridge\Application\Service\Invite;
 
-use BenGorUser\User\Application\Service\Invite\InviteUserHandler;
+use BenGorUser\User\Application\Command\Invite\InviteUserHandler;
 use Ddd\Application\Service\ApplicationService;
 
 /**

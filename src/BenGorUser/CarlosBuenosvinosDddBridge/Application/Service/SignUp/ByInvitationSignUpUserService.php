@@ -10,31 +10,32 @@
  * file that was distributed with this source code.
  */
 
-namespace BenGorUser\CarlosBuenosvinosDddBridge\Application\Service\GrantRole;
+namespace BenGorUser\CarlosBuenosvinosDddBridge\Application\Service\SignUp;
 
-use BenGorUser\User\Application\Command\GrantRole\GrantUserRoleHandler;
+use BenGorUser\User\Application\Command\SignUp\ByInvitationSignUpUserHandler;
 use Ddd\Application\Service\ApplicationService;
 
 /**
- * Grant user role service class.
+ * By invitation sign up user user service class.
  *
  * @author Beñat Espiña <benatespina@gmail.com>
+ * @author Gorka Laucirica <gorka.lauzirika@gmail.com>
  */
-class GrantUserRoleService implements ApplicationService
+class ByInvitationSignUpUserService implements ApplicationService
 {
     /**
      * The command handler.
      *
-     * @var GrantUserRoleHandler
+     * @var ByInvitationSignUpUserHandler
      */
     private $handler;
 
     /**
      * Constructor.
      *
-     * @param GrantUserRoleHandler $aHandler The command handler
+     * @param ByInvitationSignUpUserHandler $aHandler The command handler
      */
-    public function __construct(GrantUserRoleHandler $aHandler)
+    public function __construct(ByInvitationSignUpUserHandler $aHandler)
     {
         $this->handler = $aHandler;
     }

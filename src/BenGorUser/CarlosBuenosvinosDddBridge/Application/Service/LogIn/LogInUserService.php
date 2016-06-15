@@ -12,7 +12,7 @@
 
 namespace BenGorUser\CarlosBuenosvinosDddBridge\Application\Service\LogIn;
 
-use BenGorUser\User\Application\Service\LogIn\LogInUserHandler;
+use BenGorUser\User\Application\Command\LogIn\LogInUserHandler;
 use Ddd\Application\Service\ApplicationService;
 
 /**
