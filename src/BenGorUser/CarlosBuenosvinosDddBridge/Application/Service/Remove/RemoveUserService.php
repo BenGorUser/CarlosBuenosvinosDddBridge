@@ -45,6 +45,6 @@ class RemoveUserService implements ApplicationService
      */
     public function execute($request = null)
     {
-        return $this->handler($request);
+        $this->handler->__invoke($request);
     }
 }
