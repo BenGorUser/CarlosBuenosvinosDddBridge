@@ -17,9 +17,7 @@ $ composer require bengor-user/carlosbuenosvinos-ddd-bridge/
 ```
 
 ##Documentation
-All the documentation is stored in the `docs` folder.
-
-[Show me the docs!](docs/index.md)
+All the documentation is stored inside the [user library](https://github.com/BenGorUser/User/blob/master/docs/index.md).
 
 ##Tests
 This library is completely tested by **[PHPSpec][1], SpecBDD framework for PHP**.
