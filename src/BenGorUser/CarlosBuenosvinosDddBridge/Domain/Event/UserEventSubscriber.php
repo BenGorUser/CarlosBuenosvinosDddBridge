@@ -57,6 +57,6 @@ class UserEventSubscriber implements DomainEventSubscriber
      */
     public function isSubscribedTo($aDomainEvent)
     {
-        $this->subscriber->isSubscribedTo($aDomainEvent->event());
+        return $this->subscriber->isSubscribedTo($aDomainEvent->event());
     }
 }
