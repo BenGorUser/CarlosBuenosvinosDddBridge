@@ -13,7 +13,7 @@ PHP >= 5.5
 ##Installation
 The easiest way to install this component is using [Composer][6]
 ```bash
-$ composer require bengor-user/carlosbuenosvinos-ddd-bridge/
+$ composer require bengor-user/carlosbuenosvinos-ddd-bridge
 ```
 
 ##Documentation
