@@ -17,19 +17,16 @@ BenGorUser\CarlosBuenosvinosDddBridge\Domain\Model\User:
     embedded:
         confirmationToken:
             class: BenGorUser\User\Domain\Model\UserToken
-            columnPrefix: confirmation_
         email:
             class: BenGorUser\User\Domain\Model\UserEmail
             columnPrefix: false
         invitationToken:
             class: BenGorUser\User\Domain\Model\UserToken
-            columnPrefix: invitation_
         password:
             class: BenGorUser\User\Domain\Model\UserPassword
             columnPrefix: false
         rememberPasswordToken:
             class: BenGorUser\User\Domain\Model\UserToken
-            columnPrefix: remember_password_
     fields:
         createdOn:
             column: created_on
